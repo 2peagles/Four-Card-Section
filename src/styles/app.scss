@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+$grey: rgb(163, 165, 174);
+$dark-blue: hsl(234, 12%, 34%);
+ $Grayish-blue: hsl(229, 6%, 66%) ;
+ $Very-Light-Gray: hsl(0, 0%, 98%);
+
+#root {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.center-content{
+    display: flex;
+    align-items: center;
+     justify-content: center;
+}
+.intro{
+    text-align: center;
+    width:90%;
+    max-width: 500px;
+     span{
+        font-weight: 500;
+        color:$grey;
+        font-size: 1.46rem;
+     }
+     h1{
+        margin:.4rem 0;
+     }
+     p{
+        color: $grey;
+     }
+}
+.card{
+    text-align: left;
+    padding:.5rem 2rem;
+    margin:2rem 0;
+    border-radius: 5px;
+    min-height:210px;
+    box-shadow: -2px 7px 24px 1px rgba(163, 165, 174, 1);
+    -webkit-box-shadow: -2px 7px 24px 1px rgba(163, 165, 174, 1);
+    -moz-box-shadow: -2px 7px 24px 1px rgba(163, 165, 174, 1);
+    h2{
+        margin-bottom:0;
+    }
+    p{
+        margin:.5rem 0;
+        max-width: 85%;
+        color:$Grayish-blue;
+    }
+     img {
+        float:right;
+    }
+}
+ .card_one {
+      border-top: 5px solid hsl(212, 86%, 64%);
+    }
+    .card_two {
+        border-top: 5px solid hsl(0, 78%, 62%);
+     }
+    .card_three {
+         border-top: 5px solid hsl(34, 97%, 64%);
+      }
+    .card_four {
+        border-top: 5px solid $dark-blue;
+    }
+
+     @media (width > 700px) {
+        .intro{
+            h1{
+                font-size: 35px;
+            }
+            span{
+                font-size: 34px;
+            }
+        }
+            .cards {
+           
+                    display: grid;
+                    gap: 0 2rem;
+                    grid-template-columns: repeat(3, 2fr);
+                    grid-template-rows: repeat(3,1fr);
+                    gap:.1rem 2rem;
+                    .card_one{
+                        grid-area: 2 / 1 /  2  /  1 ;
+                    }
+                    .card_two {
+                        grid-area: 1 / 2 / 1 /2;
+                    }
+                    .card_three{
+                        grid-area: 3 / 2 / 3 / 2;
+                    }
+                    .card_four{
+                        grid-area: 2 / 3 / 2 / 3;
+                    }
+                }
+         }
