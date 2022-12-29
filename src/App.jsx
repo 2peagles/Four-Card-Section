@@ -16,11 +16,13 @@ function App() {
       </section>
 
       <section className='cards'>
-        <div className='card card_one left'>
+        <div className='left'>
+        <div className='card card_one'>
           <h2>Supervisor </h2>
           <p>Monitors activity to identify project roadblocks </p>
           <img src='/images/icon-supervisor.svg' alt=' eyeglass tool '/>
         </div>
+      </div>
   
         <div className='card card_two top'>
           <h2>Team Builder</h2>
@@ -34,10 +36,12 @@ function App() {
           <img src='/images/icon-karma.svg' alt=' yellow light bulb' />
         </div>
 
-        <div className='card card_four right'>
+      <div className='right'>
+        <div className='card card_four '>
           <h2>Calculator </h2>
           <p>Uses data from past projects to provide better delivery estimates </p>
           <img src='/images/icon-calculator.svg' alt='web calculator' /> </div>
+      </div>
       </section>
     </main>
   )
